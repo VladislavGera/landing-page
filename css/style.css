@@ -64,6 +64,8 @@ body {
  }
 
  .description .places .address-block{
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 10px;
   display: flex;
  }
@@ -511,6 +513,18 @@ body {
 .header {
   padding: 40px 40px;
 }
+
+}
+
+@media (max-width: 750px) {
+  .places .address-block{
+    flex-direction: column;
+ }
+ 
+ .description .places .address-block > :nth-child(2) {
+    margin-top: 10px;
+    margin-left: 0px;
+ }
 }
 
 @media (max-width: 600px) {  
